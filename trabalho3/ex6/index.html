@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>exe2 html part-2</title>
+</head>
+<body>
+    <main>
+        <form action="cadastraCliente.php" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend><h2>Dados Pessoais</h2></legend>
+                <div>
+                    <!--Assim que a página for carregada, o campo Nome deve receber o foco automaticamente-->
+                    <label for="nome">Nome</label>
+                    <br>
+                    <input type="text" name="nome" id="nome" required autofocus>
+                    <span></span>
+                </div>
+                <div>
+                    <label for="email">E-mail</label>
+                    <br>
+                    <input type="email" name="email" id="email" required>
+                    <span></span>
+                </div>
+                <div>
+                    <!--okay formato cpf-->
+                    <label for="cpf">CPF</label>
+                    <br>
+                    <input type="text" name="cpf" id="cpf" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}" placeholder="formato xxx.xxx.xxx-xx" required>
+                    <span></span>
+                </div>
+                <div>
+                    <label for="idade">Idade</label>
+                    <br>
+                    <input type="number" name="idade" id="idade" required>
+                    <span></span>
+                </div>
+                <div>
+                    <label for="tel">Telefone</label>
+                    <br>
+                    <input type="tel" name="tel" id="tel" required>
+                    <span></span>
+                </div>
+                <div>
+                    <label for="dataNasc">Data nascimento</label>
+                    <br>
+                    <input type="date" name="nadaNasc" id="dataNasc">
+                    <span></span>
+                </div>
+                <fieldset>
+                    <Legend>Sexo</Legend>
+                    
+                    <input type="radio" name="sexo" id="Masculino" value="M" required>
+                    <label for="Masculino">M</label>
+                
+                
+                    <input type="radio" name="sexo" id="Feminino" value="F">
+                    <label for="Feminino">F</label>
+                    
+                </fieldset>
+                <fieldset>
+                    <legend>Estado civil</legend>
+                    
+                    <input type="radio" name="estadoCivil" id="solteiro" value="salteiro">
+                    <label for="solteiro">solteiro</label>
+    
+                    <input type="radio" name="estadoCivil" id="casado" value="casado">
+                    <label for="casado">casado</label>
+                </fieldset>
+
+                <div>
+                    <!--O formulário deve conter um campo oculto (hidden) com name e value de sua escolha-->
+                    <input type="hidden" name="nacionalidade" value="brasileiro" >
+                </div>
+                <div>
+                    <!--Acrescente mais um campo textual, de sua escolha, na parte Dados Pessoas, que seja do tipo
+                        somente leitura. Forneça um valor inicial para o campo;-->
+                    <label for="deficiencia">Deficiencia</label>
+                    <br>
+                    <input type="text" name="deficiencia" id="deficiencia" value="nehuma" readonly>
+
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend><h2>Endereço Entrega</h2></legend>
+    
+                <div>
+                    <label for="cep">Cep</label>
+                    <br>
+                    <input type="text" name="cep" id="cep" required>
+                    <span></span>
+                </div>
+                <fieldset>
+                    <legend>Tipo logadouro</legend>
+                    <div>
+                        <input type="checkbox" name="logadouro" id="rua" value="rua" required>
+                        <label for="rua">rua</label>
+                        <span></span>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="logadouro" id="avenida" value="avenida" required>
+                        <label for="avenida">avenida</label>
+                        <span></span>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="logadouro" id="praca" value="praca" required>
+                        <label for="praca">praça</label>
+                        <span></span>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="logadouro" id="condominio" value="condominio">
+                        <label for="condominio">condominio</label>
+                        <span></span>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="colonia" id="colonia" value="colonia">
+                        <label for="colonia">colonia</label>
+                        <span></span>
+                    </div>
+                </fieldset>
+                <div>
+                    <label for="logadouro">Logadouro</label>
+                    <br>
+                    <input type="text" name="logadouro" id="logadouro" required>
+                    <span></span>
+                </div>
+                <div>
+                    <label for="bairro">Bairro</label>
+                    <br>
+                    <input type="text" name="bairro" id="bairro" required>
+                    <span></span>
+                </div>
+                <div>
+                    <label for="cidade">Cidade</label>
+                    <br>
+                    <input type="text" name="cidade" id="cidade" required>
+                    <span></span>
+                </div>
+                <div>
+                    <label for="estado">Estado</label>
+                    <select name="estado" id="estado" required>
+                        <option value="">Outro</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG" selected>Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernanbuco</option>
+                        <option value="PI">Piuaí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                        <option value="DF">Distrito federal</option>
+                    </select>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend><h2>Informações Adicionais</h2></legend>
+                <fieldset>
+                    <legend>Selecione seus interesses</legend>
+                    <div>
+                        <input type="checkbox" name="interesses" id="filmes" value="filmes">
+                        <label for="filmes">Filmes</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="interesses" id="informatica" value="informatica">
+                        <label for="informatica">Informática</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="games" id="games">
+                        <label for="games">Games</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="interesses" id="livros" value="livros">
+                        <label for="livros">Livros</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="roupas" id="roupas">
+                        <label for="roupas">Roupas</label>
+                    </div>
+                </fieldset>
+                
+                <div>
+                    <label for="info">Sobre você</label>
+                    <br>
+                    <textarea name="info" id="info" cols="155" rows="3" minlength="2" maxlength="50"></textarea>
+                </div>
+                <div>
+                    <label for="foto">Foto (opcional)</label>
+                    <input type="file" name="foto" id="foto" accept="image/jpeg, image/png">
+                </div>
+            </fieldset>
+
+            <button>Enviar</button>
+            <input type="reset" value="limpar">
+        </form>
+    </main>
+</body>
+</html>

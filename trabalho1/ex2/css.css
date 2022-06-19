@@ -1,0 +1,27 @@
+body {
+    background-color: #ddd;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main {
+    background-color: white;
+    max-width: 60%;
+}
+
+header, footer, nav {
+}
+nav ul {
+}
+nav ul li {
+}
+nav a {
+}
+
+nav a:link, nav a:visited {
+}
+nav a:hover {
+}
+h2 {
+}
+.galery img {
+}

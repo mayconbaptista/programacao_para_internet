@@ -1,0 +1,8 @@
+article{
+    box-shadow: 0 0 4px rbg(110, 187, 212);
+    background-color: #f5f5f5;
+    border: 1px solid lightgray;
+    position: relative;
+    display: inline-block;
+    padding: 100px;
+}
