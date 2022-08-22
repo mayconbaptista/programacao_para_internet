@@ -34,5 +34,16 @@ $randProds = [
   $products[rand(0, 6)]
 ];
 
+$retorno = [];
+$nome = $_GET['nome'];
+
+for($i = 0; $i < 7; $i++)
+{
+  if($products[$i]->nome == $nome)
+  {
+    $retorno = $products[$i];
+  }
+}
+
 header('Content-type: application/json');
-echo json_encode($randProds);
+echo json_encode($retorno);
