@@ -24,20 +24,27 @@ Aprofundar um pouco mais na linguagem de marcação html principalmente no uso d
 
 ### [Link:documento](./Trabalho3-CSS.pdf) - [Link:pagina](http://mayconbaptista.atwebpages.com/PPI/trabalho3/index.html)
 
-Descrição
+
 
 ## Trabalho 4  **JavaScrip e DOM**
 
 ### [Link:documento](./Trabalho4-JavaScript-DOM.pdf) - [Link:pagina](http://mayconbaptista.atwebpages.com/PPI/trabalho4/index.html)
 
-Descrição
+
 
 ## Trabalho 5 **Bootstrap e Responsividade**
 
 ### [Link:documento](./Trabalho5-Bootstrap-Responsividade.pdf) - [Link:pagina](http://mayconbaptista.atwebpages.com/PPI/trabalho5/index.html)
 
-Descrição
 
 ## Trabalho 6 **WEB dinamica com PHP**
 
 ### [Link:documento](./Trabalho6-WebDinamica-PHP.pdf) - [Link:pagina](http://mayconbaptista.atwebpages.com/PPI/trabalho6/index.html)
+
+## Trabalho 07 **Web Dinâmica com MySQL e PHP**
+
+### [Link:documento]() - [Link:pagina](http://mayconbaptista.atwebpages.com/PPI/trabalho7/index.html)
+
+## Trabalho 08 **Requisições Ajax com o XMLHttpRequest**
+
+### [Link:documento]() - [Link:pagina](http://mayconbaptista.atwebpages.com/PPI/trabalho8/index.html)
